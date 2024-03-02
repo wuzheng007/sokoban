@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>游戏</title>
+    <style>
+      #game {
+        position: relative;
+        margin: 20px auto 0;
+      }
+      #game .item {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-size: 100% 100%;
+      }
+      /* 墙壁 */
+      #game .wall {
+        background-image: url(imgs/wall.jpg);
+      }
+      /* 选手*/
+      #game .player {
+        background-image: url(imgs/player.png);
+      }
+      /* 箱子 */
+      #game .box {
+        background-image: url(imgs/box.png);
+      }
+      /* 正确位置的箱子 */
+      #game .correct-box {
+        background-image: url(imgs/over_box.png);
+      }
+      /* 正确位置 */
+      #game .correct-position {
+        border: 3px solid #73a546;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
